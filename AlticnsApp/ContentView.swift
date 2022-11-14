@@ -8,14 +8,47 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var applications: [Application] = []
+    
+    let columns: [GridItem] = [GridItem(.adaptive(minimum: 100, maximum: 150))]
+    
+    let defaultAppIcon = NSWorkspace.shared.icon(for: .application)
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView {
+            LazyVGrid(columns: columns, spacing: 20) {
+                ForEach(applications.sorted(by: { $0.name < $1.name }), id: \.url) { app in
+                    VStack {
+                        Image(nsImage: app.icon ?? defaultAppIcon)
+                        Text(app.name)
+                    }
+                }
+            }
+            .padding()
         }
-        .padding()
+        .onAppear {
+            getAppUrls()
+        }
+    }
+    
+    private func getAppUrls() {
+        do {
+            let appDir = try FileManager.default.url(for: .applicationDirectory,
+                                                     in: .localDomainMask,
+                                                     appropriateFor: nil,
+                                                     create: true)
+            if let enumerator = FileManager.default.enumerator(at: appDir, includingPropertiesForKeys: [.isRegularFileKey], options: [.skipsHiddenFiles, .skipsPackageDescendants]) {
+                for case let fileURL as URL in enumerator {
+                    let isApp: Bool = (try? fileURL.resourceValues(forKeys: [.isApplicationKey]))?.isApplication ?? false
+                    if isApp {
+                        print(fileURL)
+                        applications.append(Application(url: fileURL))
+                    }
+                }
+            }
+        } catch {
+            print(error)
+        }
     }
 }
 

@@ -11,6 +11,7 @@
 		D63E8390292231C600B79797 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63E838F292231C600B79797 /* ContentView.swift */; };
 		D63E8392292231CA00B79797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63E8391292231CA00B79797 /* Assets.xcassets */; };
 		D63E8395292231CA00B79797 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63E8394292231CA00B79797 /* Preview Assets.xcassets */; };
+		D63E839E29223D5800B79797 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63E839D29223D5800B79797 /* Application.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		D63E8391292231CA00B79797 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D63E8394292231CA00B79797 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D63E8396292231CA00B79797 /* AlticnsApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlticnsApp.entitlements; sourceTree = "<group>"; };
+		D63E839D29223D5800B79797 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				D63E838D292231C600B79797 /* AlticnsApp.swift */,
 				D63E838F292231C600B79797 /* ContentView.swift */,
+				D63E839C29223D4C00B79797 /* Objects */,
 				D63E8391292231CA00B79797 /* Assets.xcassets */,
 				D63E8396292231CA00B79797 /* AlticnsApp.entitlements */,
 				D63E8393292231CA00B79797 /* Preview Content */,
@@ -67,6 +70,14 @@
 				D63E8394292231CA00B79797 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D63E839C29223D4C00B79797 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				D63E839D29223D5800B79797 /* Application.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,7 +115,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D63E8385292231C600B79797 /* Build configuration list for PBXProject "AlticnsApp" */;
+			buildConfigurationList = D63E8385292231C600B79797 /* Build configuration list for PBXProject "Alticns" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -139,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63E839E29223D5800B79797 /* Application.swift in Sources */,
 				D63E8390292231C600B79797 /* ContentView.swift in Sources */,
 				D63E838E292231C600B79797 /* AlticnsApp.swift in Sources */,
 			);
@@ -317,7 +329,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D63E8385292231C600B79797 /* Build configuration list for PBXProject "AlticnsApp" */ = {
+		D63E8385292231C600B79797 /* Build configuration list for PBXProject "Alticns" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D63E8397292231CA00B79797 /* Debug */,
