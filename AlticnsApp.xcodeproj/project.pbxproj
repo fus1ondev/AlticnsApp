@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D63E838E292231C600B79797 /* AlticnsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63E838D292231C600B79797 /* AlticnsAppApp.swift */; };
+		D63E838E292231C600B79797 /* AlticnsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63E838D292231C600B79797 /* AlticnsApp.swift */; };
 		D63E8390292231C600B79797 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63E838F292231C600B79797 /* ContentView.swift */; };
 		D63E8392292231CA00B79797 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63E8391292231CA00B79797 /* Assets.xcassets */; };
 		D63E8395292231CA00B79797 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63E8394292231CA00B79797 /* Preview Assets.xcassets */; };
@@ -15,7 +15,7 @@
 
 /* Begin PBXFileReference section */
 		D63E838A292231C600B79797 /* AlticnsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlticnsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D63E838D292231C600B79797 /* AlticnsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlticnsAppApp.swift; sourceTree = "<group>"; };
+		D63E838D292231C600B79797 /* AlticnsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlticnsApp.swift; sourceTree = "<group>"; };
 		D63E838F292231C600B79797 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D63E8391292231CA00B79797 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D63E8394292231CA00B79797 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		D63E838C292231C600B79797 /* AlticnsApp */ = {
 			isa = PBXGroup;
 			children = (
-				D63E838D292231C600B79797 /* AlticnsAppApp.swift */,
+				D63E838D292231C600B79797 /* AlticnsApp.swift */,
 				D63E838F292231C600B79797 /* ContentView.swift */,
 				D63E8391292231CA00B79797 /* Assets.xcassets */,
 				D63E8396292231CA00B79797 /* AlticnsApp.entitlements */,
@@ -140,7 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D63E8390292231C600B79797 /* ContentView.swift in Sources */,
-				D63E838E292231C600B79797 /* AlticnsAppApp.swift in Sources */,
+				D63E838E292231C600B79797 /* AlticnsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
